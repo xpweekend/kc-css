@@ -1,0 +1,112 @@
+* {
+        font-family: "comic sans ms", sans-serif;
+
+}
+
+.title1 {
+    font-size: 80px;
+    background: linear-gradient(
+        to right,
+        #ff0000, 
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #8f00ff,
+        #ff0000,
+        #ff7f00
+    );
+    /* Vibe coded with copilot */
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 4s linear infinite;
+    margin: 10px auto 0 auto; 
+    /* Vibe coded with copilot */
+    text-align: center;
+    position: relative;
+}
+    /* Vibe coded with copilot */
+.title1::after {
+    content: '';
+    position: absolute;
+    left: 50%;           
+    transform: translateX(-50%);
+    /* Vibe coded with copilot */
+    bottom: -30px;  
+    width: 60%;
+    height: 10px;    
+    border-radius: 10px;
+    /* Vibe coded with copilot */
+    background: linear-gradient(
+        to left,     
+        #ff0000, 
+        #ff7f00,
+        #ffff00,
+        #00ff00,
+        #0000ff,
+        #4b0082,
+        #8f00ff,
+        #ff0000,
+        #ff7f00
+    );
+    background-size: 200% auto;
+    animation: rainbowLine 4s linear infinite;
+}
+
+@keyframes rainbowLine {
+    to {
+        background-position: 200% center;
+    }
+}
+    /* Vibe coded with copilot */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    /* Vibe coded with copilot */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    /* Vibe coded with copilot */
+    margin-top: 70px;
+}
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.article-header h2 {
+    margin: 0;
+}
+/* Vibe coded with copilot */
+article p + img {
+    margin-top: 30px;
+}
+
+article + article {
+    margin-top: 60px;
+}
+time {
+    color: #666;
+    font-size: 0.9em;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+@keyframes rainbow {
+    to {
+        background-position: -200% center;
+    }
+}
+/* Vibe coded with copilot */
+
+.title5 {
+    color: red;
+}
